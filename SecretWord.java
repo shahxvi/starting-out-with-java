@@ -1,20 +1,21 @@
 import java.util.Scanner;
 
 public class SecretWord {
-	public static void main(String[] args) {
 
-		String input;
+    public static void main(String[] args) {
+        String input;
 
-		Scanner keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
-		System.out.print("Enter the secret word: ");
+        System.out.print("Enter the secret word: ");
 
-		input = keyboard.nextLine();
+        input = keyboard.nextLine();
 
-		if (input.equalsIgnoreCase("JAVA"))
-				System.out.println("Congratulations! You know the secret word");
-		else
-			System.out.println("Sorry, that is not the secret word");
-	}
+        if (input.equalsIgnoreCase("JAVA")) System.out.println(
+            "Congratulations! You know the secret word"
+        );
+        else System.out.println("Sorry, that is not the secret word");
+
+        keyboard.close();
+    }
 }
-
