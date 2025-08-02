@@ -17,6 +17,8 @@ public class FileWriteDemo {
         System.out.print("Enter the filename: ");
         fileName = keyboard.nextLine();
 
+        // Create outputFile reference variable to PrintWriter class
+        // and create a new object named "fileName"
         PrintWriter outputFile = new PrintWriter(fileName);
 
         for (int i = 0; i < numFriends; i++) {
