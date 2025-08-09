@@ -14,7 +14,7 @@ public class SalesReport {
 	}
 
 	public static String getFileName() {
-		return JOptionPane.showInputDialog("Enther the name of the file/nContaining 30 days of sales amounts.");
+		return JOptionPane.showInputDialog("Enther the name of the file\nContaining 30 days of sales amounts.");
 	}
 	
 	public static double getTotalSales(String fileName) throws IOException {
