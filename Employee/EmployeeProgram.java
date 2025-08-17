@@ -14,8 +14,17 @@ public class EmployeeProgram {
 		numEmployee = Integer.parseInt(stringInput);	
 
 		fileName = JOptionPane.showInputDialog("Please enter the file name you would like to write to");
-
 		File file = new File(fileName);
+
+		WriteToFile(file, numEmployee);
+
+		Summary(file, numEmployee, fileName);
+
+		System.exit(0);
+	}
+
+	public static void WriteToFile(File file, int numEmployee) {
+		String stringInput;
 
 		PrintWriter outputFile = new PrintWriter(file);
 
@@ -43,6 +52,9 @@ public class EmployeeProgram {
 			outputFile.println();
 		}
 		outputFile.close();
+	}
+
+	public static void Summary(File file, int numEmployee, String fileName) {
 
 		Scanner inputFile = new Scanner(file);
 
@@ -59,8 +71,6 @@ public class EmployeeProgram {
 		JOptionPane.showMessageDialog(null, "Employee details written to " + fileName);
 		
 		inputFile.close();
-		System.exit(0);
 	}
-
 }
 
