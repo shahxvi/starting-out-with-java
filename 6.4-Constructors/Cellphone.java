@@ -18,7 +18,7 @@ public class Cellphone {
 		model = mod;
 	}
 
-	public void setRetailPrice(String price) {
+	public void setRetailPrice(double price) {
 		retailPrice = price;
 	}
 
@@ -27,7 +27,7 @@ public class Cellphone {
 	}
 
 	public String getModel() {
-		return model();
+		return model;
 	}
 
 	public double getRetailPrice() {
