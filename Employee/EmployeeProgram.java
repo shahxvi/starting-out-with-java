@@ -42,9 +42,23 @@ public class EmployeeProgram {
 			outputFile.println(employee.getPosition());
 			outputFile.println();
 		}
-
-		JOptionPane.showMessageDialog(null, "Employees info written to " + fileName);
 		outputFile.close();
+
+		Scanner inputFile = new Scanner(file);
+
+		for (int i = 0; i < numEmployee; i++) {
+			JOptionPane.showMessageDialog(null, "Employee #" + (i+1) + "\n" +
+							    "Name: " + inputFile.nextLine() + "\n" +
+							    "ID Number: " + inputFile.nextInt() + "\n" +
+							    inputFile.nextLine() +
+							    "Department: " + inputFile.nextLine() + "\n" +
+							    "Position: " + inputFile.nextLine() + "\n"); 
+			inputFile.nextLine();
+		}
+
+		JOptionPane.showMessageDialog(null, "Employee details written to " + fileName);
+		
+		inputFile.close();
 		System.exit(0);
 	}
 
