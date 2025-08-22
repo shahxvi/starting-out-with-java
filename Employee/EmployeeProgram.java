@@ -11,7 +11,7 @@ public class EmployeeProgram {
 		String fileName;
 
 		stringInput = JOptionPane.showInputDialog("Enter the number of employees you would like to key in");
-		numEmployee = Integer.parseInt(stringInput);	
+		numEmployee = Integer.parseInt(stringInput);
 
 		fileName = JOptionPane.showInputDialog("Please enter the file name you would like to write to");
 		File file = new File(fileName);
@@ -54,7 +54,7 @@ public class EmployeeProgram {
 		outputFile.close();
 	}
 
-	public static void Summary(File file, int numEmployee, String fileName) {
+	public static void Summary(File file, int numEmployee, String fileName) throws IOException {
 
 		Scanner inputFile = new Scanner(file);
 
@@ -64,13 +64,12 @@ public class EmployeeProgram {
 							    "ID Number: " + inputFile.nextInt() + "\n" +
 							    inputFile.nextLine() +
 							    "Department: " + inputFile.nextLine() + "\n" +
-							    "Position: " + inputFile.nextLine() + "\n"); 
+							    "Position: " + inputFile.nextLine() + "\n");
 			inputFile.nextLine();
 		}
 
 		JOptionPane.showMessageDialog(null, "Employee details written to " + fileName);
-		
+
 		inputFile.close();
 	}
 }
-
