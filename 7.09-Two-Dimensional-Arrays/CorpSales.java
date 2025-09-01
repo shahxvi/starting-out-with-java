@@ -29,5 +29,7 @@ public class CorpSales {
         }
 
         System.out.printf("Total company sales: RM%,.2f\n", totalSales);
+        
+        keyboard.close();
     }
 }
