@@ -39,6 +39,17 @@ public class AlgorithmWorkbench {
       System.out.println();
     }
 
+    // 5
+    int employeeCount = 10;
+    int[] employeeID = new int[employeeCount];
+    double[] grossPay = new double[employeeCount];
+
+    for (int i = 0; i < employeeCount; i++) {
+      System.out.println("Employee ID: " + employeeID[i]);
+      System.out.println("Gross Pay: " + grossPay[i]);
+      System.out.println();
+    }
+
   }
 }
 
