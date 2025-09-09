@@ -13,6 +13,8 @@ public class MagicEightBall {
     Scanner inputFile = new Scanner(file);
 
     int numOfResponses = 12; // Needs to be updated every time the 8_ball_responses change
+                             // TODO: determine the number of responses based on the file instead
+
     ArrayList<String> ballResponses = new ArrayList<>(numOfResponses); // ballResponses with the capacity of numOfResponses
 
     // Loads the responses from the text file to the ArrayList
