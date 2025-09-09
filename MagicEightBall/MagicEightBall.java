@@ -3,6 +3,16 @@ import java.util.Random;
 import java.io.*;
 import java.util.ArrayList;
 
+/* TLDR:
+ * Create keyboard scanner, file and inputFile scnaner
+ * Create ArrayList of ballResponses with capacity of numOfResponses
+ * Load the ArrayList with response strings from 8_ball_responses.txt
+ * Generate a random int of numOfResponses
+ * Use the random int to get one of the responses from the ballResponses ArrayList
+ * Prints the response
+ * Loops until the user inputs other than "No"
+ */
+
 public class MagicEightBall {
   public static void main(String[] args) throws IOException {
 
