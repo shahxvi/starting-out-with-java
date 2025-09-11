@@ -23,7 +23,7 @@ public class EmployeeProgram {
 		System.exit(0);
 	}
 
-	public static void WriteToFile(File file, int numEmployee) {
+	public static void WriteToFile(File file, int numEmployee) throws IOException {
 		String stringInput;
 
 		PrintWriter outputFile = new PrintWriter(file);
