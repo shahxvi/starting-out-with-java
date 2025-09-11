@@ -4,7 +4,7 @@ import java.util.ArrayList;
    This program demonstrates an ArrayList.
 */
 
-public class ArrayListDemo1 {
+public class ArrayListDemo2 {
     public static void main(String[] args) {
         // Create an ArrayList to hold some names.
         ArrayList <String> nameList = new ArrayList<String>();
