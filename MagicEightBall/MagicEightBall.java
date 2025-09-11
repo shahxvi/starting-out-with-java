@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 
 public class MagicEightBall {
-  public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
     Scanner keyboard = new Scanner(System.in);
     String filename = "8_ball_responses.txt";
@@ -41,30 +41,30 @@ public class MagicEightBall {
     // Exit the program when the user says other than "No"
     while (!keyboardInput.equalsIgnoreCase("No")) {
 
-      // Clears Screen or Terminal
-      System.out.print("\033[H\033[2J");
-      System.out.flush();
+        // Clears Screen or Terminal
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
 
-      // System.out.println(ballResponses); // For Debugging Purporses
+        // System.out.println(ballResponses); // For Debugging Purporses
 
-      // Generate new int number when it loops
-      responseNum = randomNumber.nextInt(numOfResponses);
+        // Generate new int number when it loops
+        responseNum = randomNumber.nextInt(numOfResponses);
 
-      // Uses the generated int to randomly select the response
-      String response = ballResponses.get(responseNum);
+        // Uses the generated int to randomly select the response
+        String response = ballResponses.get(responseNum);
 
-      System.out.print("Ask the Magic 8 Ball!: ");
-      keyboardInput = keyboard.nextLine(); // Doesn't matter what the user type lol, actually we can put easter eggs here
-      System.out.println(response);
+        System.out.print("Ask the Magic 8 Ball!: ");
+        keyboardInput = keyboard.nextLine(); // Doesn't matter what the user type lol, actually we can put easter eggs here
+        System.out.println(response);
 
-      System.out.print("Ask again? (Yes/No): ");
-      keyboardInput = keyboard.nextLine();
-      System.out.println(); // Blank New Line
+        System.out.print("Ask again? (Yes/No): ");
+        keyboardInput = keyboard.nextLine();
+        System.out.println(); // Blank New Line
     }
 
     inputFile.close();
     keyboard.close();
 
-  }
+    }
 }
 
