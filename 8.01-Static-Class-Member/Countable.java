@@ -17,7 +17,7 @@ public class Countable {
 	   that have been created.
 	   @return The value in the instanceCount field.
 	 */
-	public int getInstanceCount() {
+	public static int getInstanceCount() {
 		return instanceCount;
 	}
 }
