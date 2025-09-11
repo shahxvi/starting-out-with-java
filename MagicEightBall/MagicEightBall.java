@@ -29,8 +29,8 @@ public class MagicEightBall {
 
     // Loads the responses from the text file to the ArrayList
     while (inputFile.hasNext()) {
-      for (int i = 0; i < numOfResponses; i++)
-        ballResponses.add(inputFile.nextLine());
+        for (int i = 0; i < numOfResponses; i++)
+            ballResponses.add(inputFile.nextLine());
     }
 
     // Initialize needed variable for the program
