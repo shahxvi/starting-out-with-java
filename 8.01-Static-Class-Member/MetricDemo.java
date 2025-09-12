@@ -21,6 +21,8 @@ public class MetricDemo {
 				JOptionPane.showMessageDialog(null, String.format("%,.2f kilometers equals %,.2f miles.", kilometers, miles));
 			}
 		}while (!input.equals("3"));
+
+		System.exit(0);
 	}
 }
 
