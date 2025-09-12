@@ -12,7 +12,7 @@ public class PassObject {
 
 	public static void displayRectangle(Rectangle r) {
 		System.out.println("Length: " + r.getLength());
-		System.out.println("width: " + r.getWidth());
+		System.out.println("Width: " + r.getWidth());
 	}
 }
 
