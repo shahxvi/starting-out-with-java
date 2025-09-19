@@ -10,7 +10,7 @@ public class Instructor {
 	}
 
 	public Instructor(Instructor object2) {
-		this.firstName = object2.fistName;
+		this.firstName = object2.firstName;
 		this.lastName = object2.lastName;
 		this.officeNumber = object2.officeNumber;
 	}
@@ -22,7 +22,7 @@ public class Instructor {
 	}
 
 	public String toString() {
-		String str = "First Name:" + firstName + "\nLast Name: " + lastName + "\nOffice Number: " + officeNumber;
+		String str = "First Name: " + firstName + "\nLast Name: " + lastName + "\nOffice Number: " + officeNumber;
 		return str;
 	}
 }
