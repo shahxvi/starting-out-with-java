@@ -23,7 +23,7 @@ public class TextBook {
 
 	public String toString() {
 		String str = "Title: " + title +
-			     "\nAuthor" + author +
+			     "\nAuthor: " + author +
 			     "\nPublisher: " + publisher;
 		return str;
 	}
