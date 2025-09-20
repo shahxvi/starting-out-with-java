@@ -1,8 +1,10 @@
 public class StockDemo1 {
 	public static void main(String[] args) {
-		Stock xyzCompany = new Stock ("AAPL", 234.07);
+		Stock aaplCompany = new Stock("AAPL", 234.07);
+		Stock googCompany = new Stock("GOOG");
 
-		System.out.println(xyzCompany);
+		System.out.println(aaplCompany);
+		System.out.println(googCompany);
 	}
 }
 
