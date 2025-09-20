@@ -7,6 +7,10 @@ public class Stock {
 		sharePrice = price;
 	}
 
+	public Stock(String sym) {
+		this(sym, 0.00);
+	}
+
 	public String getSymbol() {
 		return symbol;
 	}
