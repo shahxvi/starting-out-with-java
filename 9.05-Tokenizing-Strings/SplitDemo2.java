@@ -3,7 +3,7 @@ public class SplitDemo2 {
                 // Create a string to tokenize
                 String str = "one and two and three and four";
 
-                // Get the tokens, using a space delimiter
+                // Get the tokens, using and as delimiter
                 String[] tokens = str.split(" and ");
 
                 // Display the tokens
