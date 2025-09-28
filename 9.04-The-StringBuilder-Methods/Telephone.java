@@ -13,7 +13,7 @@ public class Telephone {
 			return false;
 		if (str.charAt(8) != '-')
 			return false;
-		return true 
+		return true;
 	}
 
 	public static String unformat(String str) {
@@ -23,7 +23,6 @@ public class Telephone {
 			strb.deleteCharAt(0);
 			strb.deleteCharAt(3);
 			strb.deleteCharAt(6);
-			strb.deleteCharAt(0);
 		}
 
 		return strb.toString();
