@@ -1,0 +1,18 @@
+public class WrapperClasses {
+        public static void main(String[] args) {
+                int i = 12;
+                double d = 14.95;
+                String str1 = Integer.toString(i);
+                String str2 = Double.toString(d);
+                System.out.println(str1);
+                System.out.println(str2);
+
+                int number = 14;
+                System.out.println(Integer.toBinaryString(number));
+                System.out.println(Integer.toHexString(number));
+                System.out.println(Integer.toOctalString(number));
+
+                System.out.println("The minimum value for an int is " + Integer.MIN_VALUE);
+                System.out.println("The maximum value for an int is " + Integer.MAX_VALUE);
+        }
+}
