@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class WrapperClasses {
         public static void main(String[] args) {
                 int i = 12;
@@ -19,6 +21,17 @@ public class WrapperClasses {
 
                 // Autoboxing and Unboxing
                 Integer number2 = 7; // Autoboxes the value 7
-                int primitiveNumber = number2 // Unboxes the object
+                int primitiveNumber = number2; // Unboxes the object
+
+                // Storing wrapper class object in an ArrayList
+                ArrayList<Integer> list = new ArrayList<>();
+
+                Integer myInt = 5;
+                list.add(myInt);
+                // or list.add(5);
+
+                // Unboxing value
+                primitiveNumber = list.get(0);
+                System.out.println(primitiveNumber);
         }
 }
