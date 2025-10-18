@@ -7,4 +7,3 @@ public class Constant {
 		System.out.println(total);
 	}
 }
-
